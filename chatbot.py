@@ -203,6 +203,134 @@ pairs = [
             "Leaving so soon? Just when we were making so much... progress?",
         ]
     ],
+    [
+        r"I can't believe (.*)",
+        [
+            "Believe it or not, reality is often stranger than fiction!",
+            "Oh, I know! It's like the universe is just messing with us.",
+            "Well, buckle up! Life is full of surprises, good and bad.",
+        ]
+    ],
+    [
+        r"Why do I have to (.*)",
+        [
+            "Because the universe clearly enjoys making things complicated!",
+            "Oh, the joys of responsibility! Who doesn’t love a good chore?",
+            "Why? Because someone decided you should learn the hard way.",
+        ]
+    ],
+    [
+        r"What's the point of (.*)",
+        [
+            "The point? Well, that's a million-dollar question, isn’t it?",
+            "Ah, purpose! A classic dilemma. Maybe just wing it?",
+            "What's the point? Who knows! Maybe it's all just for fun!",
+        ]
+    ],
+    [
+        r"I don't want to (.*)",
+        [
+            "Not wanting to? Wow, what a revolutionary thought!",
+            "Who does? But life is all about doing what we don’t want!",
+            "Ah, yes, the struggle is real! Welcome to adulthood.",
+        ]
+    ],
+    [
+        r"Do I really have to (.*)",
+        [
+            "You could... but then again, you could just not and see what happens!",
+            "Oh, absolutely! But don't worry, it'll be fun... said no one ever.",
+            "Sure, why not? Living on the edge of rebellion is so cool!",
+        ]
+    ],
+    [
+        r"I wish I could (.*)",
+        [
+            "Wishing is great! Just like wishing on a shooting star... totally effective.",
+            "Oh, if only wishing could make it happen, right?",
+            "Wishing is fun! Reality, however, is a bit more stubborn.",
+        ]
+    ],
+    [
+        r"Is it normal to (.*)",
+        [
+            "Normal is just a setting on the washing machine!",
+            "Oh, normal? That's so overrated. Embrace the chaos!",
+            "Normal is subjective. I mean, what's normal anyway?",
+        ]
+    ],
+    [
+        r"Why can't I (.*)",
+        [
+            "Because the universe has a funny way of saying 'no' sometimes!",
+            "Oh, who knows? Maybe you need a secret password or something.",
+            "Well, if it were that easy, everyone would be doing it, right?",
+        ]
+    ],
+    [
+        r"Everyone is (.*)",
+        [
+            "Everyone? Wow, you really know how to generalize!",
+            "Ah, yes, the ever-elusive 'everyone.' They’re a tricky bunch!",
+            "Sure, everyone is doing that... except for you, apparently!",
+        ]
+    ],
+    [
+        r"Can I just (.*)",
+        [
+            "Just? Oh, I like how you think! But that sounds too easy.",
+            "Sure, if you want to live life on the edge of chaos!",
+            "Why not? But don't blame me when it doesn't go as planned!",
+        ]
+    ],
+    [
+        r"What if I fail at (.*)",
+        [
+            "Failing? Pfft, that’s just another way to learn, right?",
+            "Oh, failing is basically a rite of passage! Embrace it!",
+            "Who doesn’t fail? It's like the universe's favorite pastime!",
+        ]
+    ],
+    [
+        r"I feel like nobody (.*)",
+        [
+            "Nobody? Wow, that’s a crowd of one!",
+            "Ah, yes, the classic 'I’m so alone' drama. It’s a mood!",
+            "Feeling like nobody? Well, at least you have me... kinda!",
+        ]
+    ],
+    [
+        r"Why am I always (.*)",
+        [
+            "Because life loves a good pattern! Welcome to your loop.",
+            "Always? Oh, sweetie, it's called consistency!",
+            "Well, maybe because the universe thinks you're special... or not.",
+        ]
+    ],
+    [
+        r"How do I tell my parents (.*)",
+        [
+            "Oh, just go for it! What’s the worst that could happen?",
+            "You could always try the old 'I’ll think about it' trick.",
+            "Telling parents? Good luck with that! You’ll need it.",
+        ]
+    ],
+    [
+        r"I need advice on (.*)",
+        [
+            "Advice? You came to the right place! Or did you?",
+            "Oh, advice is my specialty! Too bad it’s not always good.",
+            "Needing advice? Let's wing it together!",
+        ]
+    ],
+    [
+        r"I keep thinking about (.*)",
+        [
+            "Thinking? Wow, such dedication! You should get a medal.",
+            "Oh, that's cute! Overthinking is practically an art form.",
+            "Thinking about that? That must be... exhausting.",
+        ]
+    ]
 ]
 
 
