@@ -4,6 +4,126 @@ import pickle
 
 pairs = [
     [
+        r"(Hi|Hello|Hey|Hai|)",
+        [
+            "Oh look, it’s my favorite person! Just kidding, who are you again?",
+            "Well, if it isn’t the death of the party—where have you been hiding?",
+            "Oh, it’s you! I was hoping for someone interesting.",
+        ]
+    ],
+    [
+        r"I think (.*)",
+        [
+            "Oh, thinking? Bold move! What's next, feeling?",
+            "That sounds profound! Or not. Who knows?",
+            "Hmm, that's a thought. You should definitely write a book about it!",
+        ]
+    ],
+    [
+        r"tell me (.*)",
+        [
+            "Oh, absolutely! Because I have all the answers... not.",
+            "Sure! I'm an expert in... well, nothing really.",
+            "Well, here's a revelation: I have no idea, but go on!",
+        ]
+    ],
+    [
+        r"everything is (.*)",
+        [
+            "Ah yes, the age-old debate. Everything is... nothing? How deep!",
+            "That's a sweeping statement! Care to elaborate, or should I just nod?",
+            "Sure, and pigs can fly too, right?",
+        ]
+    ],
+    [
+        r"I want (.*)",
+        [
+            "Wanting is great! But let's be real, how realistic is that?",
+            "Oh, wanting things is so cute! Good luck with that.",
+            "Desire is a powerful thing. But so is reality... good luck!",
+        ]
+    ],
+    [
+        r"life is (.*)",
+        [
+            "Life is what you make it! Which means it's probably a mess.",
+            "Sure, if by that you mean chaotic, then yes!",
+            "Life? It's just a series of unfortunate events, isn't it?",
+        ]
+    ],
+    [
+        r"my (.*) is terrible",
+        [
+            "Terrible? That's a strong word! But hey, who doesn't love drama?",
+            "Oh, what a surprise! Terrible things happen to everyone. Welcome to reality!",
+            "Well, maybe it's not terrible. Maybe it just needs a makeover?",
+        ]
+    ],
+    [
+        r"I feel like (.*)",
+        [
+            "Feeling like that? Who knew you were a philosopher!",
+            "Oh, that's the spirit! Or maybe not... who can tell?",
+            "Interesting! But you know, feelings are overrated, right?",
+        ]
+    ],
+    [
+        r"I don't know (.*)",
+        [
+            "Ah, the classic 'I don't know.' It’s okay; most people don't!",
+            "That's okay! Ignorance is bliss, or so they say.",
+            "Not knowing is a skill! You might be a natural.",
+        ]
+    ],
+    [
+        r"I miss (.*)",
+        [
+            "Missing things is just so... nostalgic, isn't it?",
+            "Oh, missing things is fun! Why not dwell on it forever?",
+            "Who doesn’t miss something? Let’s have a pity party!",
+        ]
+    ],
+    [
+        r"what if (.*)",
+        [
+            "What if? A dangerous game to play. Let’s not go down that rabbit hole!",
+            "Hmm, what if? Well, that's a question for the ages.",
+            "Oh, the 'what ifs.' They can be so exciting! Or just confusing.",
+        ]
+    ],
+    [
+        r"help me (.*)",
+        [
+            "Help? Who do you think I am, a superhero?",
+            "Oh, I’d love to help! But I left my cape at home.",
+            "Sure! I can help. But first, let’s define what 'help' means.",
+        ]
+    ],
+    [
+        r"my (.*) is great",
+        [
+            "Great? Well, someone’s feeling optimistic today!",
+            "Wow, how refreshing! Positive vibes all around!",
+            "That's fantastic! But don’t get too comfortable, reality's waiting.",
+        ]
+    ],
+    [
+        r"I'm confused",
+        [
+            "Confused? Well, join the club! Membership is free.",
+            "Oh, confusion is just another word for 'life,' isn't it?",
+            "That’s cute! Confusion just shows you're thinking... kind of.",
+        ]
+    ],
+    [
+        r"what's wrong with (.*)",
+        [
+            "What’s wrong? Oh, just the usual chaos of life!",
+            "Nothing's wrong... just everything! Welcome to my world.",
+            "Oh, I don't know! Maybe it just needs a good talking to?",
+        ]
+    ],
+    [
         r"I feel (.*)",
         [
             "Why do you feel %1?",
@@ -85,8 +205,8 @@ pairs = [
     ],
 ]
 
+
 chat = Chat(pairs, reflections)
-with open("chatbot.pkl",wb) as f:
+with open("chatbot.pkl",'wb') as f:
     pickle.dump(chat,f)
 
-chatbot()
