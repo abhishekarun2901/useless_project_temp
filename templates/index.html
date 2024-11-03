@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Therapist</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #d3d3d3;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background-color: #f3f3f3;
+            display: flex;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .left-section {
+            width: 40%;
+            background-color: #f6d6cf;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .left-section img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .left-section h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .left-section p {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 10px;
+        }
+        .left-section .button-container {
+            margin-top: 15px;
+        }
+        .left-section button {
+            padding: 8px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        .left-section button.primary {
+            background-color: #4a90e2;
+            color: white;
+        }
+        .left-section button.secondary {
+            background-color: #f38b66;
+            color: white;
+        }
+        .center-section {
+            width: 20%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .right-section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .doctor-image {
+            width: 500%;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="left-section">
+        <h3>Dr. N. Sane</h3>
+        <h4>Making sanity optional since... forever.</h4>
+        <p>This week, we have Dr. N. Sane: an AI therapist who really listens and offers... completely nothing of real use. Have your say, then end up with the most sarcastic responses to a confession. Still want to chat?</p>
+        <div class="button-container">
+            <button onclick="goToChat()" class="primary">Chat</button>
+        </div>
+        
+        <script>
+            function goToChat() {
+                window.location.href = "{{ url_for('chatbot') }}";
+            }
+        </script>
+        
+    </div>
+
+    <div class="right-section">
+        <img src="{{ url_for('static', filename='frontpage.jpg') }}" alt="Doctor Illustration" class="doctor-image">
+
+    </div>
+</div>
+
+</body>
+</html>
