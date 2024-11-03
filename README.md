@@ -34,7 +34,7 @@ For Software:
 For Software:
 # Installation
 pip install flask
-pip instsll nltk
+pip install nltk
 
 # Run
 python app.py
